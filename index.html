@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focust - productivity at finest</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="/assets/index.058fa520.css">
+    </head>
+
+    <body class="w-screen">
+        <nav
+            class="bg-gray-700 flex flex-col gap-5 text-white p-5 md:bg-slate-100 md:flex-row md:justify-between md:items-center">
+            <div class="logo text-blue-400 text-5xl font-medium flex justify-between">
+                Focust
+                <svg class="relative top-3 fill-white md:hidden" viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="80" height="10"></rect>
+                    <rect y="25" width="80" height="10"></rect>
+                    <rect y="50" width="80" height="10"></rect>
+                </svg>
+            </div>
+            <ul class="flex flex-col gap-3 text-xl px-1 md:text-black md:flex-row md:mx-3 md:flex"
+                style="display: flex;">
+                <li class="cursor-pointer hover:bg-slate-200 p-3 font-bold rounded-full ">Home</li>
+                <li class="cursor-pointer hover:bg-slate-200 p-3 font-bold rounded-full ">About</li>
+                <li class="cursor-pointer hover:bg-slate-200 p-3 font-bold rounded-full ">Contact</li>
+                <li class="cursor-pointer hover:bg-slate-200 p-3 font-bold rounded-full ">Features</li>
+            </ul>
+            <button class="hidden">Get started</button>
+        </nav>
+        <main>
+            <div class="landing bg-blue-700 text-white h-screen flex flex-col justify-evenly items-center">
+                <div class="left flex flex-col justify-center items-center p-5 gap-5">
+                    <p class="text-lg">Plan your life</p>
+                    <p class="mt-[-12px] text-2xl md:text-3xl">Increase your <span>productivity</span></p>
+                    <p class="text-center text-md font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum
+                        numquam eos
+                        atque illum iste
+                        quam perferendis eius aliquid molestiae harum?</p>
+                    <button
+                        class="border-2 border-slate-50 p-3 px-6 my-4 hover:bg-blue-400 hover:text-black hover:font-medium">Get
+                        Started</button>
+                </div>
+                <div class="right">
+                    <img class="text-center w-[29rem]" src="/assets/hero-image.36d54d2e.svg" alt="">
+                </div>
+            </div>
+            <div class="customerBase h-max p-5 bg-slate-500">
+                <p class="text-white text-2xl font-medium">Here you can see the information about our chief people.</p>
+                <div id="gridBox"
+                    class="customerGrid border-red-600 border-2 grid grid-cols-1 place-items-center py-5 my-3 sm:grid-cols-2 sm:space-x-1 mdmax:grid-cols-3 xl:grid-cols-4 ">
+                    <div
+                        class="p-5 w-72 h-82 m-5 shadowCustom flex flex-col items-center rounded-xl bg-slate-200 scale-[0.85]">
+
+                        <!-- <img class="image w-max rounded-full p-2 block bg-blue-500"
+                            src="https://thronesapi.com/assets/images/daenerys.jpg" alt="logo">
+
+                        <div class=" text-lg font-semibold text-justify my-4">
+
+                            <p id="name" class="py-1 text-xl font-extrabold"><b>Name:</b> John Doe</p>
+                            <p id="title" class="py-1"><b>Title:</b> Mother</p>
+                            <p id="family" class="py-1"><b>Family:</b></p>
+                            <p id="Phone" class="py-1"><b>Phone: </b>098765432345</p>
+                            
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            $(document).ready(function () {
+
+
+                $("svg").click(function () {
+                    if ($(window).width() < 770) {
+                        $("ul").toggle("slow");
+                    }
+                });
+                if ($(window).width() >= 770) {
+                    $("ul").show("slow")
+                }
+
+            });
+        </script>
+    </body>
+
+</html>
